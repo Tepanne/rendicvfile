@@ -68,8 +68,8 @@ document.getElementById('processFilesBtn').addEventListener('click', function() 
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = `${filename}_${startCategory || 'semua_kontak'}.vcf`;
-            a.textContent = `Download ${filename}_${startCategory || 'semua_kontak'}.vcf`;
+            a.download = `${filename}.vcf`;
+            a.textContent = `Download ${filename}_$.vcf`;
             a.style.display = 'block';
             a.click();
             URL.revokeObjectURL(url);
